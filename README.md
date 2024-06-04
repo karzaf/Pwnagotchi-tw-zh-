@@ -20,14 +20,44 @@ Flesh OS:
 * step 2 : Found Path of image </br>
 * step 3 : Select which driver can flash image </br>
 * step 4 : start of flash </br>
-<image src="https://github.com/karzaf/Pwnagotchi-tw-zh-/blob/main/pwnagotchi/image/Flash-Image.JPG" width="600"></image> </br>
+<image src="https://github.com/karzaf/Pwnagotchi-tw-zh-/blob/main/pwnagotchi/image/Flash-Image.JPG" width="300"></image> </br>
 </br>
 After Insert microSD card into raspberry pi </br>
-<image src="https://github.com/karzaf/Pwnagotchi-tw-zh-/blob/main/pwnagotchi/image/zero2-close-up.png" width="600"></image> </br>
+<image src="https://github.com/karzaf/Pwnagotchi-tw-zh-/blob/main/pwnagotchi/image/zero2-close-up.png" width="200"></image> </br>
 
 ---
 
-## Connection Raspberry Pi
+## Install Rndis drivers
+Step 1: Control Panel -> Hardware and Sound -> Device Manager -> Ports(COM & LPT)
+<image src="https://github.com/karzaf/Pwnagotchi-tw-zh-/blob/main/pwnagotchi/image/USB(COM).PNG" width="400"></image> </br>
 
+Step 2: Right Click and Select Update Driver -> Browse my computer for drivers </br>
+<image src="https://github.com/karzaf/Pwnagotchi-tw-zh-/blob/main/pwnagotchi/image/SelectUpdateModel.PNG" width="400"></image> </br>
 
+Step 3: Select Browse of drivers(cat & inf) folder Path -> Next </br>
+<image src="https://github.com/karzaf/Pwnagotchi-tw-zh-/blob/main/pwnagotchi/image/DriverUpdatePath.PNG" width="400"></image> </br>
+
+Successful Install and show on Network Connections </br>
+Network Connections Path: control panel -> Network and Internet -> Network and Sharing Center -> Change adapter settings </br>
+<image src="https://github.com/karzaf/Pwnagotchi-tw-zh-/blob/main/pwnagotchi/image/SuccessfulRudisInstall.PNG" width="300"></image> </br>
+<image src="https://github.com/karzaf/Pwnagotchi-tw-zh-/blob/main/pwnagotchi/image/ControlPanel-RNDISGadget.PNG" width="300"></image> </br>
+
+---
+
+## Config Network ip
+Rigth Click Network -> Properties -> (TCP/IPv4) -> Use the following IP address: </br>
+* ip address:```10.0.0.1```
+* Subnet mask:```255.255.255.0```
+* Default gateway:```10.0.0.1```
+* Use the following DNS server addresses
+* Preferred DNS server: ```8.8.8.8```
+ </br><image src="https://github.com/karzaf/Pwnagotchi-tw-zh-/blob/main/pwnagotchi/image/ControlPanel-RNDISGadget-Config.PNG" width="300"></image> </br>
+
+ ---
+
+ ## SSh Remote Configurations
+[Putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) remote input ```10.0.0.2``` and ```22``` to Hostname(or IP address) and Port, and input ```pwnagotchi``` to Saved Sessions. Next, Click the ```Load``` button to save a ip and port.
+ </br><image src="https://github.com/karzaf/Pwnagotchi-tw-zh-/blob/main/pwnagotchi/image/putty-ip%26port.JPG" width="300"></image> </br>
+ * User: ```pi```
+ * Password: ```raspberry```
 
