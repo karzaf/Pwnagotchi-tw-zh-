@@ -20,10 +20,14 @@ Flesh OS:
 * step 2 : Found Path of image </br>
 * step 3 : Select which driver can flash image </br>
 * step 4 : start of flash </br>
-<image src="https://github.com/karzaf/Pwnagotchi-tw-zh-/blob/main/pwnagotchi/image/flesh-os.JPG" width="600"></image> </br>
+<image src="https://github.com/karzaf/Pwnagotchi-tw-zh-/blob/main/pwnagotchi/image/Flash-Image.JPG" width="600"></image> </br>
 </br>
 After Insert microSD card into raspberry pi </br>
-<image src="https://github.com/karzaf/Pwnagotchi-tw-zh-/blob/main/pwnagotchi/image/flesh-os.JPG" width="600"></image> </br>
+<image src="https://github.com/karzaf/Pwnagotchi-tw-zh-/blob/main/pwnagotchi/image/zero2-close-up.png" width="600"></image> </br>
+
+---
+
+## Connection Raspberry Pi
 
 
 
