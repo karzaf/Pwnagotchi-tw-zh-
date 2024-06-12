@@ -1,4 +1,6 @@
-# Pwnagotchi 
+# [Pwnagotchi](https://github.com/evilsocket/pwnagotchi)
+
+Pwnagotchi is an A2C-based "AI" leveraging bettercap that learns from its surrounding WiFi environment to maximize the crackable WPA key material it captures (either passively, or by performing authentication and association attacks). This material is collected as PCAP files containing any form of handshake supported by hashcat, including PMKIDs, full and half WPA handshakes.
 ---
 ## Required Hardware
 * [Raspberry Pi Zero 2 W](https://www.raspberrypi.com/products/raspberry-pi-zero-2-w/) : series of small single-board computers (SBCs) </br>
@@ -60,4 +62,28 @@ Rigth Click Network -> Properties -> (TCP/IPv4) -> Use the following IP address:
  </br><image src="https://github.com/karzaf/Pwnagotchi-tw-zh-/blob/main/pwnagotchi/image/putty-ip%26port.JPG" width="300"></image> </br>
  * User: ```pi```
  * Password: ```raspberry```
+ ---
+* change root account and reset password
+```
+su
+passwd root
+```
+Output: 
+```
+New password: <new password>
+Retype new password: <new password>
+passwd: password updated successfully
+``` 
+* enable sshd to remote control FTP
+```
+echo "PermitRootLogin yes" > /etc/ssh/sshd_config
+sudo systemctl restart ssh.service
+```
+* Edit Pwnagotchi config file and start it
+```
+cd /etc/pwnagotchi/
+vi config.toml
+pwnagotchi
+```
+
 
