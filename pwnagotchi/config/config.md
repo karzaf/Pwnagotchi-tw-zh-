@@ -1,4 +1,4 @@
-# config.toml
+# Config.toml
 ```
 main.name "changeme"                                                  #Display name by paper.
 main.lang "changeme"                                                  #Lang : en, bg, ch, de, el, es, fr, ga, it, jp, mk, nl, no, pl, pt, pt-BR, ro, ru, se, sk, ua
@@ -67,7 +67,7 @@ ui.faces.upload = "(1__0)"
 ui.faces.upload1 = "(1__1)"
 ui.faces.upload2 = "(0__1)"
 ```
-## bettercap rest api
+## Bettercap rest api
 ```
 bettercap.scheme = "http"                  #http or https
 bettercap.hostname = "localhost"           #localhost or ddns.com
@@ -85,8 +85,8 @@ main.plugins.gps.speed = 9600
 main.plugins.gps.device = "/dev/ttyUSB0"
 ```
 
-## file path
-* ai = ```"/root/brain.nn"```
+## File path
+* ai = ```/root/brain.nn```
 * ai config =```/root/brain.json```
 * api =```/root/.api-report.json```
 * pcap =```/root/handshakes/```
