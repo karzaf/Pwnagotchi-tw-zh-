@@ -79,7 +79,7 @@ passwd: password updated successfully
 echo "PermitRootLogin yes" > /etc/ssh/sshd_config
 sudo systemctl restart ssh.service
 ```
-* Edit Pwnagotchi config file and start it
+* Edit Pwnagotchi config file and start it </br>
 Config.toml can follewing this part : https://github.com/karzaf/Pwnagotchi-tw-zh-/blob/main/pwnagotchi/config/config.md 
 ```
 cd /etc/pwnagotchi/
