@@ -82,9 +82,12 @@ sudo systemctl restart ssh.service
 * Edit Pwnagotchi config file and start it </br>
 Config.toml can follewing this part : https://github.com/karzaf/Pwnagotchi-tw-zh-/blob/main/pwnagotchi/config/config.md 
 ```
+mkdir /root/pwnagotchi/
+mkdir /root/pwnagotchi/log/
+mv /root/handshakes/ /root/pwnagotchi/handshakes/
 cd /etc/pwnagotchi/
 vi config.toml
-pwnagotchi
+pwnagotchi --debug
 ```
 
 
