@@ -89,4 +89,17 @@ vi /etc/pwnagotchi/config.toml
 pwnagotchi --debug
 ```
 
-
+--------
+* Problem:
+```
+root@10.0.0.2#pwnagotchi --debug
+ File "/usr/lib/python3/dist-packages/lgpio.py", line 458, in _u2i
+    raise error(error_text(v))
+lgpio.error: 'GPIO busy'
+```
+* Solved
+```
+jobs -l
+kill - 9 $pids
+pwnagotchi --debug
+```
