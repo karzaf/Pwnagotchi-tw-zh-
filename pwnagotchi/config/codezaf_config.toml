@@ -1,5 +1,5 @@
-main.name "codezaf"                                                    #Pwnagotchi is showcase <name> in Pwnagotchi, can rename anyone.
-main.lang "ch"                                                         #Lang : en, bg, ch, de, el, es, fr, ga, it, jp, mk, nl, no, pl, pt, pt-BR, ro, ru, se, sk, ua
+main.name = "codezaf"                                                  #Display name by paper.
+main.lang = "ch"                                                       #Lang : en, bg, ch, de, el, es, fr, ga, it, jp, mk, nl, no, pl, pt, pt-BR, ro, ru, se, sk, ua
 main.whitelist = [
   "illustration",
   "H138-380_B432",
@@ -20,13 +20,51 @@ main.plugins.grid.exclude = [
 
 ui.display.enabled = true                                              #Enable display by paper
 ui.display.type = "waveshare_4"                                        #Also waveshare version info label form paper model
-ui.display.color = "black"                                             #black or white
+ui.display.color = "white"                                             #black or white
+ui.fps = 3.0                                                           #Fps 0~3 maximum range of paper
+
+ui.web.address = "0.0.0.0"                                             #Web ui access
+ui.web.username = "codezaf"                                            #Change Web ui user
+ui.web.password = "Rs99N^x8CT54%JbSpr3rH#V6CrASMtJnWU#CmJSZ3z%sbuxmZqTiyVU*CE&Jbzoy3C2p5zv%uSbT!e5Lk9uP4bQFVJBB%$yBbw*yzdTg&*6RMK4z^Hfuz8buHATzb46A"                                   #Chahge Web ui password
+ui.web.port = 10020                                                    #Change customize port to access web ui 
 
 main.plugins.bt-tether.enabled = true                                  #Enable bluetooth connect
 main.plugins.bt-tether.devices.android-phone.enabled = true            #Enable bluetooth connect to android devices
-main.plugins.bt-tether.devices.android-phone.mac = "B0:4A:6A:F9:54:91" #Mac address = setting->info moble phone-> state info -> bluetooth access
-main.plugins.bt-tether.devices.android-phone.ip = "192.168.44.44"      #Defaults is 192.168.44.44, can change any ip range of 192.168.
+main.plugins.bt-tether.devices.android-phone.mac = "B0:4A:6A:F9:54:9"  #Mac address = setting->info moble phone-> state info -> bluetooth access
+main.plugins.bt-tether.devices.android-phone.ip = "192.168.1.1"        #Defaults is 192.168.44.44, can change any ip range of 192.168.
 
-main.plugins.memtemp.enabled = true                                    # Display memory usage, cpu load and cpu temperature on screen
+main.plugins.memtemp.enabled = true                                    #Display memory usage, cpu load and cpu temperature on screen
 
-main.log.path = "/home/root/pwnagotchi/log"                            #
+main.log.path = "/home/root/pwnagotchi/log"                            #Change which path folder your save
+main.log.rotation.size = "10M"                                         #File size
+
+ai.enabled = true                                                      #Enable AI
+ai.path = "/root/brain.nn"                                             #Which file path of ai 
+ai.epochs_per_episode = 100                                            #How many epochs to train on
+
+#emoticon https://smiley.cool/emoticons.php , https://facemood.grtimed.com/ 
+ui.faces.look_r = "₍₍ (ง ˘ω˘ )ว ⁾⁾"
+ui.faces.look_l = "ɾ( ˘ω˘ 〫ɩ ) ₎₎"
+ui.faces.look_r_happy = "థ౪థ"
+ui.faces.look_l_happy = "(✪ω✪)"
+ui.faces.sleep = "(¦3[▓▓]"
+ui.faces.sleep2 = "（´-`）.｡oO"
+ui.faces.awake = "ヾ(:3ﾉｼヾ)ﾉｼ 三[____]"
+ui.faces.bored = "( º﹃º )"
+ui.faces.intense = "ε=ε=ヾ(;ﾟдﾟ)/"
+ui.faces.cool = "(　′∀`)σ≡σ☆))Д′)"
+ui.faces.happy = "(　ﾟ∀ﾟ)つ≡≡≡♡♡♡)`ν゜)ｸﾞｼｬ"
+ui.faces.excited = "(<ゝω・) 綺羅星☆"
+ui.faces.grateful = "♥(´∀` )人"
+ui.faces.motivated = "ᕕ ( ᐛ ) ᕗ"
+ui.faces.demotivated = "∠( ᐛ 」∠)_"
+ui.faces.smart = "ヽ(́◕◞౪◟◕‵)ﾉ"
+ui.faces.lonely = "{:̲̅:̲̅:̲̅:̲̅{ ̲̅ ̲̅ ̲̅ ̲̅ ̲̅ ̲̅ ̲̅ ̲̅ ̲̅ ̲̅ ̲̅ ̲̅ ̲̅{}ڪڪ"
+ui.faces.sad = "(;´༎ຶД༎ຶ`)"
+ui.faces.angry = "(╬ﾟдﾟ)▄︻┻┳═一"
+ui.faces.friend = "( ͡° ͜ʖ ͡°)"
+ui.faces.broken = "_(√ ζ ε:)_"
+ui.faces.debug = "/ᐠ｡ꞈ｡ᐟ\"
+ui.faces.upload = "┳━┳ノ( ' - 'ノ)"
+ui.faces.upload1 = "(╯‵□′)╯︵┴─┴"
+ui.faces.upload2 = "┳━┳ノ( OωOノ)"
