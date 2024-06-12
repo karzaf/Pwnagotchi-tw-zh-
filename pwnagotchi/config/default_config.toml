@@ -1,5 +1,5 @@
-main.name "pwnagotchi"                                                  #Display name by paper.
-main.lang "en"                                                  #Lang : en, bg, ch, de, el, es, fr, ga, it, jp, mk, nl, no, pl, pt, pt-BR, ro, ru, se, sk, ua
+main.name = "pwnagotchi"                                               #Display name by paper.
+main.lang = "en"                                                       #Lang : en, bg, ch, de, el, es, fr, ga, it, jp, mk, nl, no, pl, pt, pt-BR, ro, ru, se, sk, ua
 main.whitelist = [
   "allow_access",
   "YourHomeNetworkHere",
