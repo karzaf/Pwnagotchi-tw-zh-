@@ -85,8 +85,7 @@ Config.toml can follewing this part : https://github.com/karzaf/Pwnagotchi-tw-zh
 mkdir /root/pwnagotchi/
 mkdir /root/pwnagotchi/log/
 mv /root/handshakes/ /root/pwnagotchi/handshakes/
-cd /etc/pwnagotchi/
-vi config.toml
+vi /etc/pwnagotchi/config.toml
 pwnagotchi --debug
 ```
 
