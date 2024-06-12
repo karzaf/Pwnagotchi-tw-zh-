@@ -1,0 +1,32 @@
+main.name "codezaf"                                                    #Pwnagotchi is showcase <name> in Pwnagotchi, can rename anyone.
+main.lang "ch"                                                         #Lang : en, bg, ch, de, el, es, fr, ga, it, jp, mk, nl, no, pl, pt, pt-BR, ro, ru, se, sk, ua
+main.whitelist = [
+  "illustration",
+  "H138-380_B432",
+  "H138-380_B432_5G",
+  "Jenny_HomeLab",
+]
+
+main.plugins.grid.enabled = true                                       #Enable PwnGrid
+main.plugins.grid.report = true                                        #Report pwned networks
+main.plugins.auto-update.enabled = false                               #Don't update ,if update not yet fix problem, that could be crash!!!
+
+main.plugins.grid.exclude = [
+  "illustration",
+  "H138-380_B432",
+  "H138-380_B432_5G",
+  "Jenny_HomeLab",
+]                                                                      #Don't report exclude list network
+
+ui.display.enabled = true                                              #Enable display by paper
+ui.display.type = "waveshare_4"                                        #Also waveshare version info label form paper model
+ui.display.color = "black"                                             #black or white
+
+main.plugins.bt-tether.enabled = true                                  #Enable bluetooth connect
+main.plugins.bt-tether.devices.android-phone.enabled = true            #Enable bluetooth connect to android devices
+main.plugins.bt-tether.devices.android-phone.mac = "B0:4A:6A:F9:54:91" #Mac address = setting->info moble phone-> state info -> bluetooth access
+main.plugins.bt-tether.devices.android-phone.ip = "192.168.44.44"      #Defaults is 192.168.44.44, can change any ip range of 192.168.
+
+main.plugins.memtemp.enabled = true                                    # Display memory usage, cpu load and cpu temperature on screen
+
+main.log.path = "/home/root/pwnagotchi/log"                            #
