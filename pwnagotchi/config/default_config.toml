@@ -38,6 +38,8 @@ ai.enabled = true                                                      #Enable A
 ai.path = "/root/brain.nn"                                             #Which file path of ai 
 ai.epochs_per_episode = 50                                             #How many epochs to train on
 
+personality.deauth = false                                             #perform a deauthentication attack to client stations in order to get full or half handshakes
+
 #emoticon https://smiley.cool/emoticons.php , https://facemood.grtimed.com/ 
 ui.faces.look_r = "( ⚆_⚆)"
 ui.faces.look_l = "(☉_☉ )"
